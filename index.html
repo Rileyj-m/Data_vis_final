@@ -175,6 +175,7 @@
             font-weight: bold;
             font-style: sans-serif;
             top: 10px;
+            z-index: -1;
         }
         .table1{
             position: absolute;
@@ -230,6 +231,11 @@
             font-style: sans-serif;
 
         }
+        #links {
+            /* we cant click the links in the header because of the position of the div */
+            z-index: 1;
+
+        }
     </style>
     <br>
     <br>
@@ -237,7 +243,7 @@
     <header style="text-align: center;"><b>Hypothesis:</b> From 2000-2021 there have been a steady increase in the both
         the amount of tornadoes
         and the severity of their magnitude in the United States.</header>
-    <header style="text-align: center;"><b>Source for Tornadoes in US:</b> <a
+    <header style="text-align: center;" id="links"><b>Source for Tornadoes in US:</b> <a
             href="https://www.kaggle.com/datasets/michaelbryantds/tornadoes">Tornadoes</a> <b>Source for US
             Geojson:</b> <a href="https://eric.clst.org/tech/usgeojson/">US Geojson</a></header>
 </head>
